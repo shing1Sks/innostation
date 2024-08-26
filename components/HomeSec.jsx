@@ -5,7 +5,7 @@ function HomeSec() {
     <div className="text-black w-full items-center flex flex-row py-[5%] justify-between">
       <img
         src="./assetleft.webp"
-        className="h-[550px] rounded-xl pt-2 sm:block hidden"
+        className="w-[24%] rounded-xl pt-2 sm:block hidden"
         alt=""
       />
       <div className="flex flex-col items-center justify-center">
@@ -22,7 +22,7 @@ function HomeSec() {
       </div>
       <img
         src="./assetright.webp"
-        className="h-[550px] rounded-xl pt-2 sm:block hidden"
+        className="w-[24%] rounded-xl pt-2 sm:block hidden"
         alt=""
       />
     </div>
