@@ -4,7 +4,9 @@ function Header() {
   return (
     <div className="w-full flex flex-row justify-between align-baseline pt-2 text-black">
       <div className="flex justify-center align-baseline sm:text-5xl sm:font-normal text-xl font-semibold pl-4">
-        iNNostation
+        <span>
+          <span className="italic">i </span>NNostation
+        </span>
       </div>
       <div className="text-gray-500 text-xl sm:flex justify-center align-baseline hidden pr-4">
         <a
