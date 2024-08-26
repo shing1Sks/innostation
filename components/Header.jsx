@@ -2,11 +2,11 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="w-full flex flex-row justify-between text-[220%] align-baseline pt-2 text-black">
-      <div className="flex justify-center align-baseline sm:text-[220%] sm:font-normal text-xl font-semibold pl-4">
+    <div className="w-full flex flex-row justify-between align-baseline pt-2 text-black">
+      <div className="flex justify-center align-baseline sm:text-5xl sm:font-normal text-xl font-semibold pl-4">
         iNNostation
       </div>
-      <div className="text-gray-500 text-[60%] sm:flex justify-center align-baseline hidden pr-4">
+      <div className="text-gray-500 text-xl sm:flex justify-center align-baseline hidden pr-4">
         <a
           href="Home"
           className="p-2 hover:border-b-gray-700 hover:border-2 border-2 border-transparent"
