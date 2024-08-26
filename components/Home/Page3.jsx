@@ -7,7 +7,7 @@ function Page3() {
         Revolutionize Your Approach
       </p>
       <p className="text-center text-orange-700 py-[5%]">
-        //this is a placeholder for our steps wala diagram
+        this is a placeholder for our steps wala diagram
       </p>
       <div className="w-full flex flex-col sm:flex-row">
         <div className="flex flex-col items-center justify-center">
