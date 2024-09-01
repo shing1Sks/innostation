@@ -1,10 +1,14 @@
 import React from "react";
 import Header from "./Header";
+import Page1 from "./Home/Page1";
+import Page2 from "./Home/Page2";
 
 function HomeSec() {
   return (
-    <div className="bg-[#e4e8ec] min-h-screen p-3">
+    <div className="bg-[#E4E8EC] w-full p-3">
       <Header />
+      <Page1 />
+      <Page2 />
     </div>
   );
 }
