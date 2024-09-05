@@ -3,45 +3,49 @@ import React from "react";
 function Page2() {
   return (
     <div className="bg-[#F0F2F4] w-full min-h-screen">
-      <p className="text-gray-800 text-6xl pt-20 pl-10">
+      <p className="text-gray-800 w-full text-[250%] pt-20 pl-3">
         Investments,Made Easy.
       </p>
       <div className="w-full flex flex-row justify-end items-center">
-        <div className="flex flex-col">
-          <div className="flex flex-row gap-6 py-[14%] px-[4%]">
+        <div className="flex flex-col w-[95%]">
+          <div className="flex flex-row gap-2 py-[14%] px-[4%]">
             <div className="">
-              <p className="text-3xl">Find</p>
-              <p>
+              <p className="text-[180%]">Find</p>
+              <p className="text-[80%]">
                 The next unicorn, waiting for you. more text can be added later
               </p>
             </div>
             <div className="">
-              <p className="text-3xl">Analyze</p>
-              <p>
+              <p className="text-[180%]">Analyze</p>
+              <p className="text-[80%]">
                 Full Transparency. Every possible statistic, available in easily
                 readable form. more text later
               </p>
             </div>
             <div className="">
-              <p className="text-3xl">Invest</p>
-              <p>Ready to invest? We have it covered, easily invest directly</p>
+              <p className="text-[180%]">Invest</p>
+              <p className="text-[80%]">
+                Ready to invest? We have it covered, easily invest directly
+              </p>
             </div>
             <div className="">
-              <p className="text-3xl">Manage</p>
-              <p>Manage all investments , all at your fingertips.</p>
+              <p className="text-[180%]">Manage</p>
+              <p className="text-[80%]">
+                Manage all investments , all at your fingertips.
+              </p>
             </div>
           </div>
-          <div className="flex flex-row w-full items-center justify-center gap-[100px] text-center pt-[10%] text-3xl">
-            <div className="border-2 border-[#8444FF] py-3 px-[100px] rounded-xl">
+          <div className="flex flex-row w-full items-center justify-center gap-[100px] text-center pt-[10%] text-[100%]">
+            <div className="border-2 border-[#8444FF] py-3 px-[10%] rounded-xl">
               Find a Startup
             </div>
-            <div className="border-2 border-[#00B568] py-3 px-[100px] rounded-xl">
+            <div className="border-2 border-[#00B568] py-3 px-[10%] rounded-xl">
               Find a Research
             </div>
           </div>
         </div>
-        <div className=" w-[500px] m-[5%] flex items-center justify-center">
-          <div className="bg-[#8444FF] h-[500px] pt-[60%] px-4 rounded-xl ">
+        <div className=" w-[30%] m-[5%] flex items-center justify-center">
+          <div className="bg-[#8444FF] h-[50%] pt-[60%] px-4 rounded-xl ">
             <div className="carousel">
               <div id="item1" className="carousel-item ">
                 <img

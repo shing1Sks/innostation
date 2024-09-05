@@ -3,22 +3,22 @@ import React from "react";
 function Page1() {
   return (
     <div className=" w-full min-h-screen">
-      <div className="flex flex-row items-center justify-between w-full pt-[10%]">
-        <div className="flex flex-col items-center justify-center w-[60%] pl-[2%]">
+      <div className="flex flex-row items-center justify-between w-full pt-[5%]">
+        <div className="flex flex-col items-center justify-center w-[60%] pl-[2%] pt-[10%]">
           <div>
-            <img src="./text.png" alt="" className="w-[60%]" />
+            <img src="./text.png" alt="" className="w-[50%]" />
           </div>
           <div className="w-full text-gray-700">
-            <p className="text-5xl pt-7">Startups. Research. Investments.</p>
-            <p className="text-2xl pt-3">At your fingertips</p>
-            <p className="text-xs pt-3">A Govt. of India initiative</p>
+            <p className="text-[200%] pt-7">Startups. Research. Investments.</p>
+            <p className="text-[80%] pt-3">At your fingertips</p>
+            <p className="text-[20%] pt-3">A Govt. of India initiative</p>
           </div>
         </div>
         <div className="text-center pr-[2%] text-gray-700">
           <div>
-            <p className="text-3xl">Choose your iNNovation</p>
+            <p className="text-[150%]">Choose your iNNovation</p>
           </div>
-          <div className="flex flex-col text-3xl text-gray-50 py-12 gap-y-10">
+          <div className="flex flex-col text-[120%] text-gray-50 py-10 gap-y-8">
             <div className="px-6 py-4  rounded-2xl">Investments</div>
             <div className="px-6 py-4 bg-[#00b568] rounded-2xl">Startups</div>
             <div className="px-6 py-4 bg-[#0564FF] rounded-2xl">Research</div>
@@ -29,8 +29,8 @@ function Page1() {
       <div className="w-full flex justify-end">
         <div className="relative">
           <svg
-            width="102"
-            height="102"
+            width="60"
+            height="60"
             viewBox="0 0 102 102"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -76,10 +76,10 @@ function Page1() {
               </filter>
             </defs>
           </svg>
-          <div className="absolute top-[30%] left-[25%]">
+          <div className="absolute top-[13%] left-[16%]">
             <svg
-              width="48"
-              height="48"
+              width="40"
+              height="40"
               viewBox="0 0 48 48"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
