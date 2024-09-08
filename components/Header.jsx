@@ -24,10 +24,15 @@ function Header() {
             className="bg-[#d9d9d9]  px-4 py-2 rounded-full focus:outline-none shadow-lg"
           />
         </div>
+
         <div className="bg-[#8444ff] flex items-center justify-center rounded-full text-white text-[80%] px-4">
+<<<<<<< HEAD
           <Link  href="/login">
           Login/Signup
           </Link>
+=======
+          <a href="/auth/login">Login/Signup</a>
+>>>>>>> d483e41f330753bc2f41f3e28a738916f6ab487d
         </div>
       </div>
     </div>

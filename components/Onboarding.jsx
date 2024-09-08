@@ -81,6 +81,11 @@ function Onboarding() {
           })}
         </div>
       </div>
+      <div className="w-full flex items-center justify-center">
+        <button className="btn">
+          <a href="/main">continue</a>
+        </button>
+      </div>
     </div>
   );
 }

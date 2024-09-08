@@ -11,17 +11,16 @@ const page = () => {
       <div className="flex">
         <div className="bg-white w-full h-screen flex justify-center items-center">
           <div className="text-black">
-            <h1 className="text-4xl font-semibold flex justify-center ">
+            <h1 className="text-4xl font-semibold flex justify-center">
               Welcome back!
             </h1>
             <p className="flex justify-center pt-3 text-sm">
               Don&apos;t have an account yet?{" "}
               <Link
-                className="text-blue-600 hover:underline "
+                className="text-blue-600 hover:underline"
                 href="/auth/signup"
               >
-                {" "}
-                Sign up now{" "}
+                Sign up now
               </Link>
             </p>
             {/* Email */}
@@ -32,7 +31,11 @@ const page = () => {
                   name="Email address"
                   id="Email"
                   placeholder=" "
+<<<<<<< HEAD:app/(auth)/login/page.jsx
                   className=" bg-white border w-128 h-16 rounded-xl peer pt-2 pl-3hover:bg-violet-600 active:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500  pl-3"
+=======
+                  className="border w-128 h-16 rounded-xl peer pt-2 pl-3 hover:bg-violet-600 active:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+>>>>>>> d483e41f330753bc2f41f3e28a738916f6ab487d:app/auth/login/page.jsx
                 />
                 <label
                   htmlFor="Email"
@@ -47,10 +50,17 @@ const page = () => {
               <div className="relative">
                 <input
                   type="password"
+<<<<<<< HEAD:app/(auth)/login/page.jsx
                   name="Password "
                   id="Password"
                   placeholder=" "
                   className=" bg-white border w-128 h-16 rounded-xl peer pt-2 pl-3hover:bg-violet-600 active:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 pl-3 "
+=======
+                  name="Password"
+                  id="Password"
+                  placeholder=" "
+                  className="border w-128 h-16 rounded-xl peer pt-2 pl-3 hover:bg-violet-600 active:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+>>>>>>> d483e41f330753bc2f41f3e28a738916f6ab487d:app/auth/login/page.jsx
                 />
                 <label
                   htmlFor="Password"
@@ -60,16 +70,16 @@ const page = () => {
                 </label>
               </div>
             </div>
+            {/* Remember Me and Forgot Password */}
             <div className="pt-4 pl-5 flex justify-between">
               <div>
                 <input
                   type="checkbox"
                   name="Remember me"
                   id="Remember me"
-                  className=" border rounded-2xl w-4 h-4"
+                  className="border rounded-2xl w-4 h-4"
                 />
                 <label htmlFor="Remember me" className="text-gray-600 text-sm">
-                  {" "}
                   Remember me
                 </label>
               </div>
@@ -80,13 +90,19 @@ const page = () => {
                 Forgot password?
               </Link>
             </div>
-            <div className=" pt-8 flex justify-center">
+            {/* Log in Button */}
+            <div className="pt-8 flex justify-center">
               <button className="bg-buttonBlue hover:bg-blue-700 text-white w-32 h-12 rounded-full">
+<<<<<<< HEAD:app/(auth)/login/page.jsx
                 <Link href="/">
                 Log in
                 </Link>
+=======
+                <a href="/onboarding">Log in</a>
+>>>>>>> d483e41f330753bc2f41f3e28a738916f6ab487d:app/auth/login/page.jsx
               </button>
             </div>
+            {/* SSO Login */}
             <div className="pt-4 flex justify-center">
               <Separator className="my-3 mr-8 w-16" /> or{" "}
               <Separator className="my-3 ml-8 w-16" />
@@ -96,9 +112,10 @@ const page = () => {
             </div>
           </div>
         </div>
+
         {/*--------------------------------Image_Section---------------------------------------*/}
-        <div className=" bg-paleGreen w-2/5  ">
-          <div className=" pt-10 pl-12 ">
+        <div className="bg-paleGreen w-2/5">
+          <div className="pt-10 pl-12">
             <Image
               src="/loginPanel.jpg"
               alt="Login Image"
@@ -106,8 +123,8 @@ const page = () => {
               height={300}
             />
           </div>
-          <div className="  pt-10">
-            <h1 className="  text-black text-2xl font-semibold flex justify-center">
+          <div className="pt-10">
+            <h1 className="text-black text-2xl font-semibold flex justify-center">
               Simple, global payroll
             </h1>
             <div className="text-gray-700 text-sm text-center pt-6">
@@ -117,9 +134,8 @@ const page = () => {
               <p>payroll management.</p>
             </div>
             <div className="flex justify-center pt-4 text-black">
-              <Button className=" border border-green-700 rounded-full hover:bg-slate-100">
-                Talk to us
-                <ArrowUpRight />
+              <Button className="border border-green-700 rounded-full hover:bg-slate-100 bg-transparent text-black">
+                Talk to us <ArrowUpRight />
               </Button>
             </div>
           </div>
