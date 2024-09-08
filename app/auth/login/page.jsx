@@ -91,7 +91,7 @@ const page = () => {
       <p>payroll management.</p>
       </div>
       <div className="flex justify-center pt-4 text-black">
-        <Button className=" border border-green-700 rounded-full hover:bg-slate-100">Talk to us<ArrowUpRight /></Button>
+        <Button className=" border border-green-700 rounded-full hover:bg-slate-100 bg-transparent text-black">Talk to us<ArrowUpRight /></Button>
       </div>
     </div>
     </div>
