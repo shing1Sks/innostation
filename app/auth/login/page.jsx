@@ -123,7 +123,7 @@ const page = () => {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
+
       <div className=" pt-8 flex justify-center">
         <button className="bg-buttonBlue hover:bg-blue-700 text-white w-32 h-12 rounded-full">Log in</button>
       </div>
@@ -159,8 +159,7 @@ const page = () => {
     </div>
     </div>
     </div>
-=======
->>>>>>> 9fd13c15bade143b6f67823ef1a2928de11705c7
+
     </>
   );
 };
