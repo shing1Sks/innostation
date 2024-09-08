@@ -32,7 +32,7 @@ const page = () => {
                   name="Email address"
                   id="Email"
                   placeholder=" "
-                  className="border w-128 h-16 rounded-xl peer pt-2 pl-3hover:bg-violet-600 active:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500  pl-3"
+                  className=" bg-white border w-128 h-16 rounded-xl peer pt-2 pl-3hover:bg-violet-600 active:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500  pl-3"
                 />
                 <label
                   htmlFor="Email"
@@ -46,11 +46,11 @@ const page = () => {
             <div className="pt-4">
               <div className="relative">
                 <input
-                  type="text"
+                  type="password"
                   name="Password "
                   id="Password"
                   placeholder=" "
-                  className="border w-128 h-16 rounded-xl peer pt-2 pl-3hover:bg-violet-600 active:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 pl-3 "
+                  className=" bg-white border w-128 h-16 rounded-xl peer pt-2 pl-3hover:bg-violet-600 active:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 pl-3 "
                 />
                 <label
                   htmlFor="Password"
@@ -74,7 +74,7 @@ const page = () => {
                 </label>
               </div>
               <Link
-                href="/auth/login"
+                href="/login"
                 className="text-blue-600 text-sm hover:underline"
               >
                 Forgot password?
@@ -82,7 +82,9 @@ const page = () => {
             </div>
             <div className=" pt-8 flex justify-center">
               <button className="bg-buttonBlue hover:bg-blue-700 text-white w-32 h-12 rounded-full">
+                <Link href="/">
                 Log in
+                </Link>
               </button>
             </div>
             <div className="pt-4 flex justify-center">
@@ -123,44 +125,6 @@ const page = () => {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
-      <div className=" pt-8 flex justify-center">
-        <button className="bg-buttonBlue hover:bg-blue-700 text-white w-32 h-12 rounded-full">Log in</button>
-      </div>
-      <div className="pt-4 flex justify-center" >
-      <Separator className="my-3 mr-8 w-16" />  or  <Separator className="my-3 ml-8 w-16" />
-      </div>
-      <div className="pt-5 text-sm text-blue-600 hover:underline flex justify-center">
-        <Link href="/auth/login">Log in with SSO</Link>
-      </div>
-    </div>
-    </div>
-{/*--------------------------------Image_Section---------------------------------------*/}
-    <div className=" bg-paleGreen w-2/5  ">
-    <div className=" pt-10 pl-12 ">
-      <Image
-      src="/loginPanel.jpg"
-      alt="Login Image"
-      width={300}
-      height={300}
-      />
-    </div>
-    <div className="  pt-10">
-      <h1 className="  text-black text-2xl font-semibold flex justify-center">Simple, global payroll</h1>
-      <div className="text-gray-700 text-sm text-center pt-6">
-      <p>Consolidate your global payroll with Remote.</p>
-      <p>Automate calculations, ensure compliance,</p>
-      <p>streamline filing so you can enjoy effortless</p>
-      <p>payroll management.</p>
-      </div>
-      <div className="flex justify-center pt-4 text-black">
-        <Button className=" border border-green-700 rounded-full hover:bg-slate-100 bg-transparent text-black">Talk to us<ArrowUpRight /></Button>
-      </div>
-    </div>
-    </div>
-    </div>
-=======
->>>>>>> 9fd13c15bade143b6f67823ef1a2928de11705c7
     </>
   );
 };

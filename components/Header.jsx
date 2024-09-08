@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Header() {
@@ -20,11 +21,13 @@ function Header() {
           <input
             type="text"
             placeholder="Search for anything"
-            className="bg-[#d9d9d9] px-4 py-2 rounded-full focus:outline-none shadow-lg"
+            className="bg-[#d9d9d9]  px-4 py-2 rounded-full focus:outline-none shadow-lg"
           />
         </div>
         <div className="bg-[#8444ff] flex items-center justify-center rounded-full text-white text-[80%] px-4">
+          <Link  href="/login">
           Login/Signup
+          </Link>
         </div>
       </div>
     </div>
