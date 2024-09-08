@@ -134,7 +134,7 @@ const page = () => {
         <Link href="/auth/login">Log in with SSO</Link>
       </div>
     </div>
-    </div>
+    
 {/*--------------------------------Image_Section---------------------------------------*/}
     <div className=" bg-paleGreen w-2/5  ">
     <div className=" pt-10 pl-12 ">
@@ -158,7 +158,7 @@ const page = () => {
       </div>
     </div>
     </div>
-    </div>
+  
     </>
   );
 };
