@@ -1,40 +1,91 @@
+"use client";
+import Image from "next/image";
 import React from "react";
+import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
-function Page3() {
+export function Page3() {
+  const cards = data.map((card, index) => (
+    <Card key={card.src} card={card} index={index} />
+  ));
+
   return (
-    <div className="flex flex-col">
-      <p className="text-xl w-[100%] sm:text-6xl font-semibold text-black text-center">
-        Revolutionize Your Approach
-      </p>
-      <p className="text-center text-orange-700 py-[5%]">
-        this is a placeholder for our steps wala diagram
-      </p>
-      <div className="w-full flex flex-col sm:flex-row">
-        <div className="flex flex-col items-center justify-center">
-          <div className="w-full pl-[5%] sm:pl-[35%] hover:cursor-pointer">
-            <div className="border-[1px] w-fit px-[2%] py-[2px] mb-[10%] text-lg rounded-2xl border-purple-500 text-purple-500">
-              Get Started
-            </div>
-          </div>
-          <div className="sm:ml-[10%] flex flex-col items-center justify-center sm:p-2">
-            <p className="text-black font-semibold sm:w-[50%] text-lg sm:text-3xl">
-              Unlock the Power of Collaboration
-            </p>
-            <p className="text-gray-500 w-[90%] sm:w-[50%] py-4 text-sm sm:text-lg">
-              Explore Our Innovative Platform and Discover New Opportunities to
-              Grow Your Business, Advance Your Research, or Ignite Your
-              Entrepreneurial Passion
-            </p>
-          </div>
-        </div>
-        <img
-          src="/page3asset.webp"
-          className="w-[80%] pl-[10%]sm:pl-0 sm:w-[20%]"
-          alt=""
-        />
-      </div>
+    <div className="w-full h-full py-20">
+      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-[180%] font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+        The Best Startup Incubator, Period.
+      </h2>
+      <Carousel items={cards} />
     </div>
   );
 }
 
-export default Page3;
+const DummyContent = () => {
+  return (
+    <>
+      {[...new Array(3).fill(1)].map((_, index) => {
+        return (
+          <div
+            key={"dummy-content" + index}
+            className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 w-full"
+          >
+            <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans">
+              <span className="font-bold text-neutral-700 dark:text-neutral-200">
+                The first rule of Apple club is that you boast about Apple club.
+              </span>{" "}
+              Keep a journal, quickly jot down a grocery list, and take amazing
+              class notes. Want to convert those notes to text? No problem.
+              Langotiya jeetu ka mara hua yaar is ready to capture every
+              thought.
+            </p>
+            <Image
+              src="https://assets.aceternity.com/macbook.png"
+              alt="Macbook mockup from Aceternity UI"
+              height="400"
+              width="400"
+              className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+            />
+          </div>
+        );
+      })}
+    </>
+  );
+};
+
+const data = [
+  {
+    category: "Artificial Intelligence",
+    title: "You can do more with AI.",
+    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Productivity",
+    title: "Enhance your productivity.",
+    src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Product",
+    title: "Launching the new Apple Vision Pro.",
+    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+
+  {
+    category: "Product",
+    title: "Maps for your iPhone 15 Pro Max.",
+    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "iOS",
+    title: "Photography just got better.",
+    src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Hiring",
+    title: "Hiring for a Staff Software Engineer",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+];
