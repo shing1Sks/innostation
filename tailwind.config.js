@@ -14,7 +14,9 @@ module.exports = {
       colors: {
         paleGreen: "#E0ECE8",
         buttonBlue: "#0061ff",
+        backgroundWhite: "#F0F2F4",
         background: "hsl(var(--background))",
+        containerBlue: "#0564ff",
         foreground: "hsl(var(--foreground))",
         card: {
           DEFAULT: "hsl(var(--card))",
