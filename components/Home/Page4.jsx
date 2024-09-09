@@ -4,7 +4,7 @@ import Image from "next/image";
 const Page4 = () => {
   return (
     <>
-      <div className=" w-full  min-h-screen flex flex-col">
+      <div className=" w-full  min-h-screen flex flex-col bg-white">
         <h1 className="text-5xl text-bold py-5 pl-9">Research</h1>
         <div className="flex justify-center pt-20">
           <div className="bg-p4bg w-[80%] h-[400px] flex justify-between rounded-2xl ml-8 mr-8 mb-8 ">
