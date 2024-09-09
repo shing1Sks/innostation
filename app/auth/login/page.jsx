@@ -98,7 +98,7 @@ const page = () => {
 
         {/*--------------------------------Image_Section---------------------------------------*/}
         <div className="bg-paleGreen w-2/5">
-          <div className="pt-10 pl-12">
+          <div className="w-full flex items-center justify-center pt-16">
             <Image
               src="/loginpanel.jpg"
               alt="Login Image"
