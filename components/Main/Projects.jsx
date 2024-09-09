@@ -18,7 +18,7 @@ function Projects() {
   return (
     <div className="w-full border-2 border-black mx-2 flex flex-col items-center justify-center p-3 h-[80vh]">
       <p className="text-2xl p-3">Projects</p>
-      <div className="border-2 border-black w-[80%] h-full text-black pt-3">
+      <div className="border-2 border-black w-[90%] h-full text-black pt-3">
         {projects.map((i, ind) => (
           <div key={ind} className="m-1 border-2 border-gray-600 py-2">
             <div className="text-gray-700 text-xl">{i.name}</div>

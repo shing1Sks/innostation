@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import Nav from "@/components/Main/Nav";
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import { InfinitySpin } from "react-loader-spinner";
+import NotesApp from "@/components/NotesApp";
 
 function formatResponse(aiText) {
   return aiText
@@ -14,6 +16,7 @@ function formatResponse(aiText) {
 function Chatbot() {
   const [mymsg, setMymsg] = useState(""); // Input message state
   const [res, setRes] = useState([]); // Store both user and AI messages
+  const [loader, setLoader] = useState(false);
 
   const genAI = new GoogleGenerativeAI(process.env.NEXT_PUBLIC_API_KEY);
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
@@ -24,10 +27,11 @@ function Chatbot() {
     setRes((prev) => [...prev, { message: mymsg, sender: "user" }]);
 
     try {
+      setLoader(true);
       const result = await model.generateContent(mymsg);
       const aiMessage = await result.response.text(); // Extract the AI response
       const formattedResponse = formatResponse(aiMessage);
-
+      setLoader(false);
       setRes((prev) => [...prev, { message: formattedResponse, sender: "ai" }]);
     } catch (error) {
       console.error("Error fetching AI response:", error);
@@ -40,7 +44,9 @@ function Chatbot() {
     <div className="min-h-screen w-full p-3">
       <Nav />
       <div className="w-full pt-3 flex flex-row justify-between gap-3">
-        <div className="w-[30%] border-2 border-black min-h-[80vh]">Note</div>
+        <div className="w-[30%] border-2 border-black min-h-[80vh]">
+          <NotesApp />
+        </div>
         <div className="w-full border-2 border-black min-h-[80vh] relative">
           <div className="p-2">Messages</div>
           <div className="overflow-y-auto h-[70vh] p-3">
@@ -55,6 +61,14 @@ function Chatbot() {
                 dangerouslySetInnerHTML={{ __html: message.message }}
               />
             ))}
+            {loader && (
+              <InfinitySpin
+                visible={true}
+                width="200"
+                color="#4fa94d"
+                ariaLabel="infinity-spin-loading"
+              />
+            )}
           </div>
           <div className="flex items-center justify-center w-full absolute bottom-2 gap-3">
             <input

@@ -19,7 +19,9 @@ function Page1() {
             <p className="text-[150%]">Choose your iNNovation</p>
           </div>
           <div className="flex flex-col text-[120%] text-gray-50 py-10 gap-y-8">
-            <div className="px-6 py-4  rounded-2xl">Investments</div>
+            <div className="px-6 py-4 bg-[#5A05FF] rounded-2xl">
+              Investments
+            </div>
             <div className="px-6 py-4 bg-[#00b568] rounded-2xl">Startups</div>
             <div className="px-6 py-4 bg-[#0564FF] rounded-2xl">Research</div>
             <div className="px-6 py-4 bg-[#e1506b] rounded-2xl">IPR</div>
