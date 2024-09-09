@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="flex flex-row bg-[#4B1A76] py-[8%] px-[2%] text-sm sm:text-lg text-slate-300 items-center justify-evenly">
+    <div className="flex flex-row bg-[#5A05FF] mt-10 py-[8%] px-[2%] text-sm sm:text-lg text-slate-300 items-center justify-evenly">
       <div>iNNostation</div>
       <div className="flex flex-col gap-2">
         <p className="font-semibold">Resources</p>
