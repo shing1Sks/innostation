@@ -100,7 +100,7 @@ const page = () => {
         <div className="bg-paleGreen w-2/5">
           <div className="pt-10 pl-12">
             <Image
-              src="/loginPanel.jpg"
+              src="/loginpanel.jpg"
               alt="Login Image"
               width={300}
               height={300}
